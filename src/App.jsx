@@ -1,12 +1,21 @@
-import React from 'react'
-import Navbar from './pages/navbar/navbar'
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './pages/navbar/navbar';
+import Homepage from './pages/Home/homepage';
 
 const App = () => {
   return (
-    <div>
-    <Navbar />
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Navbar /> {/* Always visible */}
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<Homepage />} />
+        <Route path="/" element={<Homepage />} />
 
-export default App
+        {/* Add more routes below if needed */}
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;
