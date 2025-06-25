@@ -1,8 +1,12 @@
 import Header from "../../components/home/header"
 import About from "../../components/about/about"
+import Services from "../../components/services/services"
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const homepage = () => {
 
@@ -26,6 +30,9 @@ const homepage = () => {
             <Header />
             <section id="about">
               <About />
+            </section>
+            <section id="services">
+              <Services />
             </section>
         </div>
     )

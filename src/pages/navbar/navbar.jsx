@@ -52,8 +52,8 @@ const Navbar = () => {
                     <li className="flex items-center"><button onClick={(e) => { handleTheme(e) }}><VscColorMode className="text-dark dark:text-yellow-500 text-xl transition duration-300" /></button></li>
                     <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="/">Home</Link></li>
                     <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="/about">About Us</Link></li>
-                    <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="home">Services</Link></li>
-                    <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="home">Contact Us</Link></li>
+                    <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="/services">Services</Link></li>
+                    <li className="hover:text-blue-500 focus:text-blue-500 active:text-blue-700 cursor-pointer"><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </nav>
 
