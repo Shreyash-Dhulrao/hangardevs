@@ -57,9 +57,9 @@ const Header = () => {
       <img
         src={Image1}
         alt="Hero"
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 mask-b-from-80% mask-b-to-100%"
       />
-      <div className="relative z-10 bg-white/70 dark:bg-zinc-900/75 backdrop-blur-md shadow-sm rounded-3xl p-6 sm:p-10 md:p-12 max-w-[90%] md:max-w-2xl lg:max-w-4xl mx-auto text-center md:text-left">
+      <div className="relative z-10 bg-white/70 dark:bg-zinc-900/75 backdrop-blur-xl shadow-sm rounded-3xl p-6 sm:p-10 md:p-12 max-w-[90%] md:max-w-2xl lg:max-w-4xl mx-auto text-center md:text-left">
         <h3 className="text-2xl md:text-4xl font-montserrat font-semibold text-blue-600 mb-4">
           Transforming Ideas Into Scalable Web Solutions
         </h3>

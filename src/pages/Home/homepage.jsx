@@ -1,6 +1,7 @@
 import Header from "../../components/home/header"
 import About from "../../components/about/about"
 import Services from "../../components/services/services"
+import Contact from "../../components/contact/contact-us"
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -26,13 +27,16 @@ const homepage = () => {
     }, [location]);
 
     return (
-        <div className="pt-22 dark:bg-zinc-900">
+        <div className="dark:bg-zinc-900">
             <Header />
-            <section id="about">
+            <section id="about" className="">
               <About />
             </section>
-            <section id="services">
+            <section id="services" className="scroll-mt-20">
               <Services />
+            </section>
+            <section id="contact" className="scroll-mt-20">
+              <Contact />
             </section>
         </div>
     )
