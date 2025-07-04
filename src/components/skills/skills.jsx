@@ -47,29 +47,38 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden dark:bg-zinc-950/50 bg-zinc-50 py-10">
-      <div className="flex justify-center mb-5">
-        <h2 className="md:text-4xl text-2xl font-montserrat md:text-4xl font-bold text-zinc-900 dark:text-white">
+  <div className="overflow-hidden dark:bg-zinc-950/50 bg-zinc-50 py-10">
+    <div className="flex justify-center mb-5">
+      <h2 className="md:text-4xl text-2xl font-montserrat font-bold text-zinc-900 dark:text-white">
         Skills
       </h2>
-      </div>
-      <div className="relative w-full" ref={sliderRef}>
-        <div className="flex w-max skill-slide">
-          {[...skills, ...skills].map((skill, index) => (
-            <div
-              key={index}
-              className="w-fit mx-4 dark:text-white p-4 rounded-lg flex gap-3 items-center justify-center"
-            >
-              <div className=" mb-2 bg-zinc-200/50 z-0 dark:bg-zinc-600 rounded-sm p-2">
-                <img src={skill.icon} alt="" className='w-14' />
-              </div>
-              <div className="md:text-4xl text-xl font-semibold font-montserrat uppercase">{skill.name}</div>
+    </div>
+
+    <div className="relative w-full" ref={sliderRef}>
+      {/* Left Fade */}
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-zinc-50 dark:from-zinc-950 to-transparent z-10"></div>
+
+      {/* Right Fade */}
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-zinc-50 dark:from-zinc-950 to-transparent z-10"></div>
+
+      <div className="flex w-max skill-slide">
+        {[...skills, ...skills].map((skill, index) => (
+          <div
+            key={index}
+            className="w-fit mx-4 dark:text-white p-4 rounded-lg flex gap-3 items-center justify-center"
+          >
+            <div className="mb-2 bg-zinc-200/50 dark:bg-zinc-800 rounded-lg p-2">
+              <img src={skill.icon} alt="" className="w-14" />
             </div>
-          ))}
-        </div>
+            <div className="md:text-4xl text-xl font-semibold font-montserrat uppercase">
+              {skill.name}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default Skills;
