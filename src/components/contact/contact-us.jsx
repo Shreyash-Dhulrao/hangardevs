@@ -8,6 +8,9 @@ gsap.registerPlugin(ScrollTrigger);
 const ContactForm = () => {
   const formRef = useRef();
 
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+  }
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       gsap.from(formRef.current, {
@@ -74,6 +77,7 @@ const ContactForm = () => {
           <div className="text-center">
             <button
               type="submit"
+              onClick={handleSubmit}
               className="bg-gradient-to-r from-cyan-500 to-indigo-500 hover:from-cyan-600 hover:to-indigo-600 transition-all duration-300 dark:text-white font-semibold px-8 py-3 rounded-xl shadow-lg"
             >
               Send Message
