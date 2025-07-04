@@ -59,14 +59,14 @@ const Navbar = () => {
     return (
         <>
             {/* Responsive Navbar */}
-            <nav className="font-montserrat fixed top-0 w-full z-30">
+            <nav className="font-montserrat fixed top-0 w-screen z-30">
                 <div className="w-full flex justify-center items-center py-3 px-4 md:px-6 transition duration-300">
                     <div
                         ref={navInnerRef}
                         className="bg-zinc-100/75 dark:bg-zinc-900/75 gap-4 md:gap-10 backdrop-blur-xl shadow-md rounded-full px-6 md:px-10 py-3 flex justify-between md:justify-around items-center w-full transition-transform duration-300 origin-center"
                     >
                         {/* Logo */}
-                        <div className="w-10 md:w-14">
+                        <div className="w-32 md:w-52">
                             <img src={Favicon} alt="logo" className="w-full" />
                         </div>
 
@@ -104,22 +104,22 @@ const Navbar = () => {
             {/* Bottom Navbar for Mobile */}
             <nav className="md:hidden w-full fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-900 border-t border-gray-200 shadow-t z-50">
                 <div className="flex justify-around items-center px-4 py-2">
-                    <button className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    <Link to="/" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaHouse className="w-5 h-5 mb-1" />
                         Home
-                    </button>
-                    <button className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </Link>
+                    <Link to="/about" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaUser className="w-5 h-5 mb-1" />
                         About Us
-                    </button>
-                    <button className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </Link>
+                    <Link to="/services" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaGears className="w-5 h-5 mb-1" />
                         Services
-                    </button>
-                    <button className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </Link>
+                    <Link to="/contact" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaPhone  className="w-5 h-5 mb-1" />
                         Contact Us
-                    </button>
+                    </Link>
                 </div>
             </nav>
 
