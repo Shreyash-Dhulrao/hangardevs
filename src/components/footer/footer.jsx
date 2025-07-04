@@ -90,7 +90,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='md:mb-2 mb-5'>
                 <p className='text-lg text-zinc-700 dark:text-zinc-300'>© 2025 HangarDevs. All rights reserved.</p>
             </div>
 
