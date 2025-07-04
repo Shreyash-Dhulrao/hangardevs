@@ -18,16 +18,16 @@ const Footer = () => {
                 <div>
                     <p className='font-semibold text-xl'>Website Links</p>
                     <ul className="flex flex-col font-semilight">
-                        <li className={`font-quicksand cursor-pointer hover:text-zinc-100 text-zinc-700 dark:text-zinc-400`}>
+                        <li className={`font-quicksand cursor-pointer hover:text-zinc-900 dark:hover:text-zinc-50 text-zinc-500 hover:font-semibold  dark:text-zinc-400`}>
                             <Link to="/">Home</Link>
                         </li>
-                        <li className={`font-quicksand cursor-pointer hover:text-zinc-100 emibold" text-zinc-700 dark:text-zinc-400`}>
+                        <li className={`font-quicksand cursor-pointer hover:text-zinc-900 dark:hover:text-zinc-50 text-zinc-500 hover:font-semibold  dark:text-zinc-400`}>
                             <Link to="/about">About Us</Link>
                         </li>
-                        <li className={`font-quicksand cursor-pointer hover:text-zinc-100 emibold" text-zinc-700 dark:text-zinc-400`}>
+                        <li className={`font-quicksand cursor-pointer hover:text-zinc-900 dark:hover:text-zinc-50 text-zinc-500 hover:font-semibold  dark:text-zinc-400`}>
                             <Link to="/services">Services</Link>
                         </li>
-                        <li className={`font-quicksand cursor-pointer hover:text-zinc-100 emibold" text-zinc-700 dark:text-zinc-400`}>
+                        <li className={`font-quicksand cursor-pointer hover:text-zinc-900 dark:hover:text-zinc-50 text-zinc-500 hover:font-semibold  dark:text-zinc-400`}>
                             <Link to="/contact">Contact Us</Link>
                         </li>
                     </ul>
