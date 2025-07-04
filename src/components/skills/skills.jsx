@@ -56,10 +56,10 @@ const Skills = () => {
 
     <div className="relative w-full" ref={sliderRef}>
       {/* Left Fade */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-zinc-50 dark:from-zinc-950 to-transparent z-10"></div>
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-zinc-50 dark:from-zinc-950/50 to-transparent z-10"></div>
 
       {/* Right Fade */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-zinc-50 dark:from-zinc-950 to-transparent z-10"></div>
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-zinc-50 dark:from-zinc-950/50 to-transparent z-10"></div>
 
       <div className="flex w-max skill-slide">
         {[...skills, ...skills].map((skill, index) => (
