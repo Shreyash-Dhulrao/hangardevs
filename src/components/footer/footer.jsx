@@ -91,7 +91,7 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <p className='text-lg text-zinc-300'>© 2025 HangarDevs. All rights reserved.</p>
+                <p className='text-lg text-zinc-700 dark:text-zinc-300'>© 2025 HangarDevs. All rights reserved.</p>
             </div>
 
         </footer>
