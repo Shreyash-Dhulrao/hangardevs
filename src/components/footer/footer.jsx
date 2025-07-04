@@ -35,9 +35,9 @@ const Footer = () => {
                 <div>
                     <p className='font-semibold text-xl'>Contact Us</p>
                     <div className="flex flex-col items-start p-2">
-                        <p className='text-zinc-300'><span className='font-semibold text-lg text-white'>Mobile: </span>0000000000</p>
-                        <p className='text-zinc-300'><span className='font-semibold text-lg text-white'>Email Address: </span><a href="mailto:samplemail@gmail.com" target='_blank'>samplemail@gmail.com</a></p>
-                        <p className='text-zinc-300'><span className='font-semibold text-lg text-white'>Location: </span><a href="https://maps.app.goo.gl/t9i2XyY9iEqD1gHS6" target='_blank'>Pune, Maharashtra, India</a></p>
+                        <p className='text-zinc-700 dark:text-zinc-300'><span className='font-semibold text-lg dark:text-white'>Mobile: </span>0000000000</p>
+                        <p className='text-zinc-700 dark:text-zinc-300'><span className='font-semibold text-lg dark:text-white'>Email Address: </span><a href="mailto:samplemail@gmail.com" target='_blank'>samplemail@gmail.com</a></p>
+                        <p className='text-zinc-700 dark:text-zinc-300'><span className='font-semibold text-lg dark:text-white'>Location: </span><a href="https://maps.app.goo.gl/t9i2XyY9iEqD1gHS6" target='_blank'>Pune, Maharashtra, India</a></p>
                     </div>
                 </div>
                 <div>
