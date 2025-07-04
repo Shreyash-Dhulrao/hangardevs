@@ -99,11 +99,8 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-            </nav>
-
-            {/* Bottom Navbar for Mobile */}
-            <nav className="md:hidden w-screen fixed bottom-0 left-0 right-0 z-50 p-3">
-                <div className="flex justify-around items-center px-4 py-2 bg-zinc-200/50 dark:bg-zinc-700/50 backdrop-blur-md py-4 rounded-2xl border dark:border-zinc-200 border-zinc-700">
+                <div className="fixed md:hidden bottom-0 w-screen p-3">
+                    <div className="flex justify-around items-center px-4 py-2 bg-zinc-200/50 dark:bg-zinc-700/50 backdrop-blur-md py-4 rounded-2xl">
                     <a href="#home" className="flex flex-col items-center justify-center text-xs text-zinc-800 dark:text-zinc-200 hover:text-blue-600 w-1/4">
                         <FaHouse className="w-5 h-5 mb-1" />
                         Home
@@ -121,7 +118,10 @@ const Navbar = () => {
                         Contact Us
                     </a>
                 </div>
+                </div>
             </nav>
+
+                
 
         </>
     );
