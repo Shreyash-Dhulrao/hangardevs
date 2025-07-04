@@ -71,7 +71,7 @@ const Header = () => {
           Our team turns your digital vision into reality. We create high-performance websites, web apps, and custom software with a focus on usability, security, and long-term value.
         </p>
         <div className="flex justify-center md:justify-start">
-          <Link_button url="/services" />
+          <Link_button url="/contact" />
         </div>
       </div>
     </div>
