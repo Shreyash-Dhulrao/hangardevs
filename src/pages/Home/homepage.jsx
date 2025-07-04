@@ -60,7 +60,7 @@ const homepage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-black">
+    <div className="min-h-screen bg-white dark:bg-black w-screen min-w-14">
       {/* Footer Background Layer */}
       <div className="bottom-0 left-0 right-0" />
 
