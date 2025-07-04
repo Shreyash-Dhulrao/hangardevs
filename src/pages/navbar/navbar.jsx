@@ -46,11 +46,11 @@ const Navbar = () => {
         gsap.to(navInnerRef.current, {
             width: "60%",
             ease: "power2.inOut",
-            duration: 1,
+            duration: 5,
             scrollTrigger: {
                 trigger: document.body,
                 start: "top top",
-                end: "+=200",
+                end: "+=700",
                 scrub: 1.5,
             },
         });
@@ -76,19 +76,19 @@ const Navbar = () => {
                         <ul className="flex gap-10 font-semilight">
                             <li className="flex items-center">
                                 <button onClick={handleTheme}>
-                                    <VscColorMode className="text-dark dark:text-yellow-500 text-xl transition duration-300" />
+                                    <VscColorMode className="text-dark dark:text-blue-500 text-xl transition duration-300" />
                                 </button>
                             </li>
-                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 ${location.pathname === "/" ? "text-blue-500 font-semibold" : "text-zinc-700 dark:text-zinc-200"}`}>
+                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 text-zinc-700 dark:text-zinc-200`}>
                                 <Link to="/">Home</Link>
                             </li>
-                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 ${location.pathname === "/about" ? "text-blue-500 font-semibold" : "text-zinc-700 dark:text-zinc-200"}`}>
+                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 emibold" text-zinc-700 dark:text-zinc-200`}>
                                 <Link to="/about">About Us</Link>
                             </li>
-                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 ${location.pathname === "/services" ? "text-blue-500 font-semibold" : "text-zinc-700 dark:text-zinc-200"}`}>
+                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 emibold" text-zinc-700 dark:text-zinc-200`}>
                                 <Link to="/services">Services</Link>
                             </li>
-                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 ${location.pathname === "/contact" ? "text-blue-500 font-semibold" : "text-zinc-700 dark:text-zinc-200"}`}>
+                            <li className={`font-quicksand cursor-pointer hover:text-blue-500 emibold" text-zinc-700 dark:text-zinc-200`}>
                                 <Link to="/contact">Contact Us</Link>
                             </li>
                         </ul>

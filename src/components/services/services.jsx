@@ -5,19 +5,19 @@ import gsap from "gsap";
 
 const serviceList = [
   {
-    icon: <FaLaptopCode size={36} className="text-blue-500" />,
+    icon: <FaLaptopCode className="text-blue-500 fw-light text-5xl" />,
     title: "Web Development",
     description:
       "We build responsive, fast, and secure websites tailored to your business needs using modern technologies.",
   },
   {
-    icon: <FaCodeBranch size={36} className="text-purple-500" />,
+    icon: <FaCodeBranch weight="light" color="#a855f7" className="text-purple-500 fw-light text-5xl" />,
     title: "Software Development",
     description:
       "Custom software solutions designed to solve your unique business challenges and scale with growth.",
   },
   {
-    icon: <MdDesignServices size={36} className="text-pink-500" />,
+    icon: <MdDesignServices className="text-pink-500 fw-light text-5xl" />,
     title: "UI/UX Design",
     description:
       "Crafting stunning, intuitive interfaces that connect users with your product seamlessly.",

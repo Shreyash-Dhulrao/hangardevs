@@ -44,11 +44,11 @@ const AboutSection = () => {
       ref={containerRef}
       className="transition duration-300 bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-zinc-900 dark:to-zinc-800 py-16 px-6 md:px-20"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-start">
         {/* Image */}
         <div
           ref={imageRef}
-          className="rounded-3xl overflow-hidden shadow-xl w-full h-full sticky top-32 self-start hidden md:block"
+          className="rounded-3xl overflow-hidden shadow-xl w-full h-full sticky top-32 self-start hidden lg:block"
         >
           <img
             src={aboutimg}

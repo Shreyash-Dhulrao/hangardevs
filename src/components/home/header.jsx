@@ -1,7 +1,10 @@
 import React, { useLayoutEffect, useRef } from "react";
 import Image1 from "../../assets/Images/images/website-background.jpg";
 import Link_button from "../button/link_button";
-import { FaUser } from "react-icons/fa6";
+import Rocket from '../../assets/Images/images/rocket_transparent.png'
+import Mobile from '../../assets/Images/images/mobile_transparent.png'
+import Security from '../../assets/Images/images/security_transprent.png'
+
 import gsap from "gsap";
 
 
@@ -10,22 +13,23 @@ const Header = () => {
   const cardsRef = useRef([]);
 
   const features = [
-    {
-      icon: <FaUser size={40} className="text-black dark:text-white" />,
-      title: "Free Delivery",
-      desc: "Lorem ipsum dolor sit amet.",
-    },
-    {
-      icon: <FaUser size={40} className="text-black dark:text-white" />,
-      title: "Support 24/7",
-      desc: "Lorem ipsum dolor sit amet.",
-    },
-    {
-      icon: <FaUser size={40} className="text-black dark:text-white" />,
-      title: "100% Authentic",
-      desc: "Lorem ipsum dolor sit amet.",
-    },
-  ];
+  {
+    icon: Rocket,
+    title: 'Blazing Fast Performance',
+    desc: 'Websites and apps that load in seconds — optimized for speed so your users never have to wait, improving engagement and SEO.',
+  },
+  {
+    icon: Mobile,
+    title: 'Mobile-First Experience',
+    desc: 'Seamless performance across all devices — your users get a smooth, intuitive experience whether they’re on desktop, tablet, or mobile.',
+  },
+  {
+    icon: Security,
+    title: 'Secure by Design',
+    desc: 'Built-in security best practices to protect user data, prevent hacks, and establish trust with your audience from day one.',
+  },
+];
+
 
   useLayoutEffect(() => {
   const ctx = gsap.context(() => {
@@ -73,15 +77,17 @@ const Header = () => {
     </div>
 
     {/* FEATURES SECTION */}
-    <div className="bg-zinc-150 dark:bg-zinc-800 py-12 px-4 sm:px-8 md:px-16">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div className="bg-zinc-200 dark:bg-zinc-800 py-12 px-4 sm:px-8 md:px-16">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
         {features.map((feature, index) => (
           <div
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
             className="flex items-start gap-4"
           >
-            <div className="min-w-[40px]">{feature.icon}</div>
+            <div className="min-w-[40px] text-2xl text-zinc-900 dark:text-cyan-500">
+              <img src={feature.icon} className="w-3/4" />
+            </div>
             <div>
               <h3 className="text-xl font-semibold text-black dark:text-white">
                 {feature.title}
