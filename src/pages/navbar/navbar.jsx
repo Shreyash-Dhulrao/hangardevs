@@ -85,16 +85,16 @@ const Navbar = () => {
                                 </button>
                             </li>
                             <li className="cursor-pointer hover:text-blue-500 text-zinc-700 dark:text-zinc-200">
-                                <Link to="/">Home</Link>
+                                <a href="#home">Home</a>
                             </li>
                             <li className="cursor-pointer hover:text-blue-500 text-zinc-700 dark:text-zinc-200">
-                                <Link to="/about">About Us</Link>
+                                <a href="#about">About Us</a>
                             </li>
                             <li className="cursor-pointer hover:text-blue-500 text-zinc-700 dark:text-zinc-200">
-                                <Link to="/services">Services</Link>
+                                <a href="#services">Services</a>
                             </li>
                             <li className="cursor-pointer hover:text-blue-500 text-zinc-700 dark:text-zinc-200">
-                                <Link to="/contact">Contact Us</Link>
+                                <a href="#contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -104,22 +104,22 @@ const Navbar = () => {
             {/* Bottom Navbar for Mobile */}
             <nav className="md:hidden w-screen fixed bottom-0 left-0 right-0 bg-white dark:bg-zinc-900 border-t border-gray-200 shadow-t z-50">
                 <div className="flex justify-around items-center px-4 py-2">
-                    <Link to="/" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    <a href="#home" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaHouse className="w-5 h-5 mb-1" />
                         Home
-                    </Link>
-                    <Link to="/about" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </a>
+                    <a href="#about" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaUser className="w-5 h-5 mb-1" />
                         About Us
-                    </Link>
-                    <Link to="/services" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </a>
+                    <a href="#services" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaGears className="w-5 h-5 mb-1" />
                         Services
-                    </Link>
-                    <Link to="/contact" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
+                    </a>
+                    <a href="#contact" className="flex flex-col items-center justify-center text-xs text-gray-600 dark:text-gray-300 hover:text-blue-600 w-1/4">
                         <FaPhone  className="w-5 h-5 mb-1" />
                         Contact Us
-                    </Link>
+                    </a>
                 </div>
             </nav>
 
