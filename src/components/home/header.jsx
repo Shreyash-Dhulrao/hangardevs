@@ -57,7 +57,7 @@ const Header = () => {
   return (
     <div>
     {/* HERO SECTION */}
-    <div className="relative w-full h-screen overflow-hidden flex items-center justify-center" id="home">
+    <div className="relative w-screen h-screen overflow-hidden flex items-center justify-center" id="home">
       <img
         src={Image1}
         alt="Hero"

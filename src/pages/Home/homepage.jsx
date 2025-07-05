@@ -65,7 +65,7 @@ const homepage = () => {
       <div className="bottom-0 left-0 right-0" />
 
       {/* Main Content */}
-      <div className="flex flex-col pb-20 xl:mb-74 lg:mb-68 mb-20 md:rounded-b-[40px] rounded-b-2xl lg:rounded-b-[80px] border border-zinc-400 dark:border-zinc-700 bg-zinc-200/50 dark:bg-zinc-900 shadow-xl">
+      <div className="flex flex-col pb-20 xl:mb-74 lg:mb-68 mb-28 md:rounded-b-[40px] rounded-b-2xl lg:rounded-b-[80px] border border-zinc-400 dark:border-zinc-700 bg-zinc-200/50 dark:bg-zinc-900 shadow-xl">
         <section id="home">
           <Header />
         </section>
